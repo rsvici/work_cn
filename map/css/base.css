@@ -14,7 +14,6 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
     margin:0;
     padding:0;
     font-family: '微软雅黑';
-    font-size: 1rem;
 }
 /* 要注意表单元素并不继承父级 font 的问题 */
 body,button,input,select,textarea {
