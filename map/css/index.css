@@ -191,3 +191,6 @@ div.nav .nav_hide .left {
   .amap-copyright {
     display: none !important;
   }
+  .amap-marker-label {
+    border: none;
+  }

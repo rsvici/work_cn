@@ -91,14 +91,16 @@
 <script>
     // 创建地图实例
     var map = new AMap.Map("dituContent", {
-        viewMode: '3D',
-        pitch: 55,
-        zoom: 17,
-        center: [121.403979, 31.211853],
-        mapStyle: 'amap://styles/normal',
-        buildingAnimation: true,
-        showIndoorMap: true,
-        indoorMap: true,
+      viewMode: '3D',
+      pitch: 70,
+      zoom: 17.5,
+      center: [121.404058, 31.211158],
+      mapStyle: 'amap://styles/normal',
+      buildingAnimation: true,
+      showIndoorMap: true,
+      indoorMap: true,
+      showBuildingBlock: true,
+      rotation: 76
     });
 
 
@@ -112,107 +114,190 @@
 
     // 设置边界
     var prism = [];
+    var meshLine = [];
 
     function drawBounds() {
-        $.getJSON("map.json", function (resjson) {
+      $.getJSON("map.json", function (resjson) {
 
-            var boundobj = [];
-            for (var i = 0, l = resjson[0].length; i < l; i++) {
-                //生成行政区划polygon
-                var bound = new AMap.LngLat(resjson[0][i].P, resjson[0][i].O);
-                boundobj.push(bound);
-            }
+        var boundobj = [];
+        for (var i = 0, l = resjson[0].length; i < l; i++) {
+          //生成行政区划polygon
+          var bound = new AMap.LngLat(resjson[0][i].P, resjson[0][i].O);
+          boundobj.push(bound);
+        }
 
-            var height = 1000;
-            var color = 'rgba(100,255,255, 0.7)'; //rgba
-            prism = new AMap.Object3D.Prism({
-                path: boundobj,
-                height: height,
-                color: color,
-            });
-            prism.transparent = true;
+        var height = 1000;
+        var color = 'rgba(100,255,255, 0.1)'; //rgba
+        prism = new AMap.Object3D.Prism({
+
+          path: boundobj,
+          height: height,
+          color: color,
         });
+        prism.transparent = true;
+
+        meshLine = new AMap.Object3D.MeshLine({
+          path: boundobj,
+          color: 'rgba(55,129,240, 0.9)',
+          width: 5,
+          height:10
+        });
+
+      });
     }
     drawBounds();
 
     // 添加模型
     map.plugin(["AMap.GltfLoader"], function () {
-        var hqyszx = './gltf/hqyszx.gltf';
-        var paramCity = {
-            position: new AMap.LngLat(121.40396, 31.211692),
-            scale: 18,
-            height: 120,
-            scene: 0
-        };
+      var gltfObj = new AMap.GltfLoader();
+      // 虹桥艺术中心
+      var urlHqyszx = './gltf/hqyszx.gltf';
+      var positionHqyszx = {
+        position: new AMap.LngLat(121.40396, 31.211692),
+        scale: 18,
+        height: 40,
+        scene: 0
+      };
+      gltfObj.load(urlHqyszx, function (gltfCity) {
+        gltfCity.setOption(positionHqyszx);
+        gltfCity.rotateX(90);
+        gltfCity.rotateY(0);
+        gltfCity.rotateZ(0);
+        object3Dlayer.add(gltfCity);
+      });
 
-        var gltfObj = new AMap.GltfLoader();
+      // 百盛优客
+      var urlBsyk = './gltf/bsyk.gltf';
+      var positionBsyk = {
+        position: new AMap.LngLat(121.403260, 31.210697),
+        scale: 70,
+        height: 0,
+        scene: 0
+      };
+      gltfObj.load(urlBsyk, function (gltfCity) {
+        gltfCity.setOption(positionBsyk);
+        gltfCity.rotateX(90);
+        gltfCity.rotateY(0);
+        gltfCity.rotateZ(190);
+        object3Dlayer.add(gltfCity);
+      });
 
-        gltfObj.load(hqyszx, function (gltfCity) {
-            gltfCity.setOption(paramCity);
-            gltfCity.rotateX(90);
-            gltfCity.rotateY(0);
-            gltfCity.rotateZ(0);
-            object3Dlayer.add(gltfCity);
-        });
+      // 汇金百货
+      var urlHjbh = './gltf/hjbh.gltf';
+      var positionHjbh = {
+        position: new AMap.LngLat(121.405055, 31.211506),
+        scale: 20,
+        height: 0,
+        scene: 0
+      };
+      gltfObj.load(urlHjbh, function (gltfCity) {
+        gltfCity.setOption(positionHjbh);
+        gltfCity.rotateX(90);
+        gltfCity.rotateY(0);
+        gltfCity.rotateZ(10);
+        object3Dlayer.add(gltfCity);
+      });
 
     });
-
     // 添加控制器
     AMap.plugin([
-        'AMap.ControlBar',
+      'AMap.ControlBar',
     ], function () {
 
-        // 添加 3D 罗盘控制
-        map.addControl(new AMap.ControlBar());
+      // 添加 3D 罗盘控制
+      map.addControl(new AMap.ControlBar());
     });
-
 
     // 标识点
+    // 虹桥艺术中心
     var hqyszxMarker = new AMap.Marker({
-        map: map,
-        icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
-        position: [121.40396, 31.211692],
-        height: 350
+      map: map,
+      icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+      position: [121.40396, 31.211692],
+      height: 400,
     });
-    // hqyszxMarker.setLabel({
-    //   //修改label相对于maker的位置
-    //   offset: new AMap.Pixel(-30, 31),
-    //   content: "<div class='info'>虹桥艺术中心</div>"
-    // });
+    hqyszxMarker.setLabel({
+      //修改label相对于maker的位置
+      offset: new AMap.Pixel(-30, 31),
+      content: "<div class='info'>虹桥艺术中心</div>"
+    });
+
+    // 百盛优客
+    var baskMarker = new AMap.Marker({
+      map: map,
+      icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+      position: [121.403260, 31.210697],
+      height: 600,
+    });
+    baskMarker.setLabel({
+      //修改label相对于maker的位置
+      offset: new AMap.Pixel(-40, 31),
+      content: "<div class='info'>百盛优客城市广场</div>"
+    });
+
+    // 汇金百货
+    var hjbhMarker = new AMap.Marker({
+      map: map,
+      icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+      position: [121.405055, 31.211506],
+      height: 400,
+    });
+    hjbhMarker.setLabel({
+      //修改label相对于maker的位置
+      offset: new AMap.Pixel(-20, 31),
+      content: "<div class='info'>汇金百货</div>"
+    });
+
+
+
 
     function showInfoM(e) {
-        // console.log('['+e.lnglat.getLng()+','+e.lnglat.getLat()+']!');
-        window.location.href = "http://www.beerqi.com/changning/#/shopinfo?shopId=2";
+      window.location.href = "http://www.beerqi.com/changning/#/shopinfo?shopId=2";
     }
     hqyszxMarker.on('click', showInfoM);
+    baskMarker.on('click', showInfoM);
+    hjbhMarker.on('click', showInfoM);
 
 
     // 放大缩小事件
     map.on('zoomend', function (e) {
-        if (map.getZoom() > 16) {
-            object3Dlayer.remove(prism);
-        } else {
-            object3Dlayer.add(prism);
-        }
+
+      if (map.getZoom() > 16) {
+        object3Dlayer.remove(prism);
+        object3Dlayer.remove(meshLine);
+        
+      } else {
+        object3Dlayer.add(prism);
+        object3Dlayer.add(meshLine);
+      }
+
+      if (map.getZoom() > 17.5) {
+        $('.amap-marker-label').css({
+          display: 'block'
+        });
+      } else {
+        $('.amap-marker-label').css({
+          display: 'none'
+        });
+      }
     });
 
     //点击事件
     map.on('click', function (ev) {
-        // 触发事件的对象
-        var target = ev.target;
+      // 触发事件的对象
+      var target = ev.target;
 
-        // 触发事件的地理坐标，AMap.LngLat 类型
-        var lnglat = ev.lnglat;
+      // 触发事件的地理坐标，AMap.LngLat 类型
+      var lnglat = ev.lnglat;
 
-        // 触发事件的像素坐标，AMap.Pixel 类型
-        var pixel = ev.pixel;
+      // 触发事件的像素坐标，AMap.Pixel 类型
+      var pixel = ev.pixel;
 
-        // 触发事件类型
-        var type = ev.type;
-        // console.log(ev);
+      // 触发事件类型
+      var type = ev.type;
+      // console.log(ev);
     });
-</script>
-
+  </script>
 <script src="./js/index.js "></script>
 
 </html>
