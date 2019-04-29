@@ -1,6 +1,11 @@
 angular.module('myapp', ['ionic'])
     .controller('myCtrl', ['$scope', '$state', '$http', '$httpParamSerializer', '$stateParams', function($scope, $state, $http, $httpParamSerializer, $stateParams) {
 
+        console.log($stateParams);
+        localStorage.setItem('south', $stateParams.south);
+        localStorage.setItem('west', $stateParams.west);
+
+
         var imgWidth = $('.container img').width();
         $scope.address = '临空';
         $scope.isCanDown = false;
