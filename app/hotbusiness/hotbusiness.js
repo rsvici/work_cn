@@ -39,9 +39,8 @@ angular.module('hotbusinessModule', [])
             })
         }
 
-        $scope.goShopInfo = function (shopItem) {
-            shopVal = shopItem;
-            $state.go('shopinfo')
+        $scope.goShopInfo = function (shopItemId) {
+            $state.go('shopinfo',{shopItemId})
         };
 
 

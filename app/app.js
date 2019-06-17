@@ -45,7 +45,7 @@ angular.module('myApp', ['ionic', 'hotbusinessModule', 'businessinfoModule', 'sh
         })
         // 商场详情
         .state("shopinfo", {
-            url: "/shopinfo?shopItem",
+            url: "/shopinfo?shopItemId",
             views: {
                 "view": {
                     templateUrl: "./app/shopinfo/shopinfo.html",
