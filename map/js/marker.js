@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: rsvici
+ * @Date: 2019-01-31 11:40:32
+ * @LastEditors: rsvici
+ * @LastEditTime: 2019-08-15 15:29:14
+ */
 // 标识点
 if (getQueryString('endsouth')) {
 
@@ -156,7 +164,7 @@ if (getQueryString('endsouth')) {
   hdhMarker.setLabel({
     //修改label相对于maker的位置
     offset: new AMap.Pixel(-30, 31),
-    content: "<div class='info1'>环东华·智尚园</div>",
+    content: "<div class='info1'>环东华·智尚源</div>",
   })
 
   // 来福士广场
@@ -237,111 +245,215 @@ if (getQueryString('endsouth')) {
     content: "<div class='info1'>银星皇冠假日酒店</div>",
   })
 
+  // 中山公园
+  var zsgyMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.418388, 31.221646],
+    height: 550,
+  })
+  zsgyMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-20, 31),
+    content: "<div class='info1'>中山公园</div>",
+  })
+
+  // 缤谷广场
+  var bggcMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.387616, 31.214272],
+    height: 550,
+  })
+  bggcMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-20, 31),
+    content: "<div class='info1'>缤谷广场</div>",
+  })
+
+  // 长宁图书馆
+  var cntsgMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.388569, 31.214999],
+    height: 850,
+  })
+  cntsgMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-25, 31),
+    content: "<div class='info1'>长宁图书馆</div>",
+  })
+
+  // 龙之梦购物中心
+  var lzmgwMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.416623, 31.219152],
+    height: 800,
+  })
+  lzmgwMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-35, 31),
+    content: "<div class='info1'>龙之梦购物中心</div>",
+  })
+
+  // 龙之梦万丽酒店
+  var lzmgwMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.4171 , 31.219152],
+    height: 2100,
+  })
+  lzmgwMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-35, 31),
+    content: "<div class='info1'>龙之梦万丽酒店</div>",
+  })
+
+  // 上海影城
+  var shycMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.429497 , 31.202700],
+    height: 400,
+  })
+  shycMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-20, 31),
+    content: "<div class='info1'>上海影城</div>",
+  })
+
+
+  // 宋庆龄纪念馆
+  var sqlgjMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.410518, 31.195099],
+    height: 500,
+  })
+  sqlgjMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-30, 31),
+    content: "<div class='info1'>宋庆龄纪念馆</div>",
+  })
+
+  // 长宁文化艺术中心
+  var cnwhysMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.387819, 31.205851],
+    height: 600,
+  })
+  cnwhysMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-40, 31),
+    content: "<div class='info1'>长宁文化艺术中心</div>",
+  })
 
 
   // 自定义事件
   // 虹桥艺术中心
   function showInfoMxinhongqiao() {
     window.location.href =
-      `../#/shopinfo?shopId=0&businessName=xinhongqiao`
+      `../#/shopinfo?shopItemId=3`
   }
   hqyszxMarker.on('click', showInfoMxinhongqiao)
 
   // 百盛优客
   function showInfoMbaskMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=3&businessName=xinhongqiao`
+      `../#/shopinfo?shopItemId=10`
   }
   baskMarker.on('click', showInfoMbaskMarker)
 
   // 汇金百货
   function showInfoMhjbhMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=6&businessName=xinhongqiao`
+      `../#/shopinfo?shopItemId=13`
   }
   hjbhMarker.on('click', showInfoMhjbhMarker)
 
   // 巴黎春天
   function showInfoMblctMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=9&businessName=xinhongqiao`
+      `../#/shopinfo?shopItemId=16`
   }
   blctMarker.on('click', showInfoMblctMarker)
 
   // 尚嘉中心
   function showInfoMsjzxMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=4&businessName=xinhongqiao`
+      `../#/shopinfo?shopItemId=11`
   }
   sjzxMarker.on('click', showInfoMsjzxMarker)
 
   // 临空soho
   function showInfoMlksohoMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=0&businessName=linkong`
+      `../#/shopinfo?shopItemId=17`
   }
   lksohoMarker.on('click', showInfoMlksohoMarker)
 
   // 金光绿庭广场
   function showInfoMjgltgcMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=5&businessName=xinhongqiao`
+      `../#/shopinfo?shopItemId=12`
   }
   jgltgcMarker.on('click', showInfoMjgltgcMarker)
 
   // 高岛屋
   function showInfoMgdwMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=4&businessName=zhongshan`
+      `../#/shopinfo?shopItemId=18`
   }
   gdwMarker.on('click', showInfoMgdwMarker)
 
   // 南丰城
   function showInfoMnfcMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=2&businessName=xinhongqiao`
+      `../#/shopinfo?shopItemId=9`
   }
   nfcMarker.on('click', showInfoMnfcMarker)
 
   // 华宁国际广场
   function showInfoMhngjMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=1&businessName=zhongshan`
+      `../#/shopinfo?shopItemId=4`
   }
   hngjMarker.on('click', showInfoMhngjMarker)
 
   // 上海世贸商城
   function showInfoMsmscMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=7&businessName=xinhongqiao`
+      `../#/shopinfo?shopItemId=14`
   }
   smscMarker.on('click', showInfoMsmscMarker)
 
   // 环东华·智尚园
   function showInfoMhdhMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=3&businessName=zhongshan`
+      `../#/shopinfo?shopItemId=6`
   }
   hdhMarker.on('click', showInfoMhdhMarker)
 
   // 来福士广场
   function showInfoMlfsMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=8&businessName=xinhongqiao`
+      `../#/shopinfo?shopItemId=15`
   }
   lfsMarker.on('click', showInfoMlfsMarker)
 
   // 上海国际舞蹈中心
   function showInfoMgjwdzxMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=1&businessName=xinhongqiao`
+      `../#/shopinfo?shopItemId=8`
   }
   gjwdzxMarker.on('click', showInfoMgjwdzxMarker)
 
   // 刘海粟美术馆
   function showInfoMlhsMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=0&businessName=zhongshan`
+      `../#/shopinfo?shopItemId=2`
   }
   lhsMarker.on('click', showInfoMlhsMarker)
 
@@ -349,14 +461,19 @@ if (getQueryString('endsouth')) {
   // 上海国际体操中心
   function showInfoMgjtczxMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=5&businessName=zhongshan`
+      `../#/shopinfo?shopItemId=7`
   }
   gjtczxMarker.on('click', showInfoMgjtczxMarker)
 
   // 上生新所
   function showInfoMgssxsMarker() {
     window.location.href =
-      `../#/shopinfo?shopId=2&businessName=zhongshan`
+      `../#/shopinfo?shopItemId=5`
   }
   ssxsMarker.on('click', showInfoMgssxsMarker)
+
+
+
+
+
 }

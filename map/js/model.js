@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: rsvici
+ * @Date: 2019-01-31 11:40:32
+ * @LastEditors: rsvici
+ * @LastEditTime: 2019-08-15 15:36:33
+ */
 // 添加模型
 map.plugin(['AMap.GltfLoader'], function () {
   console.log(1);
@@ -291,5 +299,133 @@ map.plugin(['AMap.GltfLoader'], function () {
     object3Dlayer.add(gltfCity)
   })
 
+  // 中山公园
+  var urlzsgy = './gltf/zsgy.gltf'
+  var positionzsgy = {
+    position: new AMap.LngLat(121.418388, 31.221646),
+    scale: 118,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlzsgy, function (gltfCity) {
+    gltfCity.setOption(positionzsgy)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
 
+  // 缤谷广场
+  var urlbggc = './gltf/bggc.gltf'
+  var positionbggc = {
+    position: new AMap.LngLat(121.387616, 31.214272),
+    scale: 140,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlbggc, function (gltfCity) {
+    gltfCity.setOption(positionbggc)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(14)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 长宁图书馆
+  var urlcntsg = './gltf/cntsg.gltf'
+  var positioncntsg = {
+    position: new AMap.LngLat(121.388569, 31.214999),
+    scale: 77,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlcntsg, function (gltfCity) {
+    gltfCity.setOption(positioncntsg)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(15)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 龙之梦购物中心
+  var urlgzmgw = './gltf/lzmgw.gltf'
+  var positionlzmgw = {
+    position: new AMap.LngLat(121.416623, 31.219152),
+    scale: 142,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlgzmgw, function (gltfCity) {
+    gltfCity.setOption(positionlzmgw)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 龙之梦万丽酒店
+  var urllzmwl = './gltf/lzmwl.gltf'
+  var positionlzmwl = {
+    position: new AMap.LngLat(121.416623, 31.219152),
+    scale: 142,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urllzmwl, function (gltfCity) {
+    gltfCity.setOption(positionlzmwl)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 上海影城
+  var urlshyc = './gltf/shyc.gltf'
+  var positionshyc = {
+    position: new AMap.LngLat(121.429600 , 31.202800),
+    scale: 36,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlshyc, function (gltfCity) {
+    gltfCity.setOption(positionshyc)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(8)
+    object3Dlayer.add(gltfCity)
+  })
+
+
+
+  // 宋庆龄纪念馆
+  var urlsqlgj = './gltf/sqlgj.gltf'
+  var positionsqlgj = {
+    position: new AMap.LngLat(121.410518, 31.195099),
+    scale: 160,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlsqlgj, function (gltfCity) {
+    gltfCity.setOption(positionsqlgj)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 长宁文化艺术中心
+  var urlcnwhys = './gltf/cnwgys.gltf'
+  var positioncnwhys = {
+    position: new AMap.LngLat(121.387819, 31.205851),
+    scale: 52,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlcnwhys, function (gltfCity) {
+    gltfCity.setOption(positioncnwhys)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
 })
