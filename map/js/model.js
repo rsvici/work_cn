@@ -3,8 +3,8 @@
  * @version: 
  * @Author: rsvici
  * @Date: 2019-01-31 11:40:32
- * @LastEditors: rsvici
- * @LastEditTime: 2019-08-15 15:36:33
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2019-10-21 16:52:54
  */
 // 添加模型
 map.plugin(['AMap.GltfLoader'], function () {
@@ -382,7 +382,7 @@ map.plugin(['AMap.GltfLoader'], function () {
   // 上海影城
   var urlshyc = './gltf/shyc.gltf'
   var positionshyc = {
-    position: new AMap.LngLat(121.429600 , 31.202800),
+    position: new AMap.LngLat(121.429600, 31.202800),
     scale: 36,
     height: 0,
     scene: 0
@@ -428,4 +428,422 @@ map.plugin(['AMap.GltfLoader'], function () {
     gltfCity.rotateZ(0)
     object3Dlayer.add(gltfCity)
   })
+
+  // 天山公园
+  var urltsgy = './gltf/2/tsgy.gltf'
+  var positiontsgy = {
+    position: new AMap.LngLat(121.415586, 31.210077),
+    scale: 168,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urltsgy, function (gltfCity) {
+    gltfCity.setOption(positiontsgy)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 育音堂
+  var urltyyt = './gltf/2/yyt.gltf'
+  var positionyyt = {
+    position: new AMap.LngLat(121.415586, 31.210077),
+    scale: 168,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urltyyt, function (gltfCity) {
+    gltfCity.setOption(positionyyt)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+
+  // 长宁区工人文化宫
+  var urltcnqgr = './gltf/2/cnqgr.gltf'
+  var positioncnqgr = {
+    position: new AMap.LngLat(121.425838, 31.219466),
+    scale: 40,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urltcnqgr, function (gltfCity) {
+    gltfCity.setOption(positioncnqgr)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+
+  // 长宁区少年儿童图书馆
+  var urlettsg = './gltf/2/ettsg.gltf'
+  var positionettsg = {
+    position: new AMap.LngLat(121.426645, 31.219051),
+    scale: 26,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlettsg, function (gltfCity) {
+    gltfCity.setOption(positionettsg)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+
+  // 星空广场
+  var urlxkgc = './gltf/2/xkgc.gltf'
+  var positionexkgc = {
+    position: new AMap.LngLat(121.392423, 31.20068),
+    scale: 98,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlxkgc, function (gltfCity) {
+    gltfCity.setOption(positionexkgc)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+
+  //  虹桥郁锦香宾馆
+  var urlhqyjx = './gltf/2/hqyjx.gltf'
+  var positionehqyjx = {
+    position: new AMap.LngLat(121.410744, 31.203886),
+    scale: 140,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlhqyjx, function (gltfCity) {
+    gltfCity.setOption(positionehqyjx)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 虹桥锦江大酒店
+  var urlhqjj = './gltf/2/hqjj.gltf'
+  var positionehqjj = {
+    position: new AMap.LngLat(121.405538, 31.203441),
+    scale: 72,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlhqjj, function (gltfCity) {
+    gltfCity.setOption(positionehqjj)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 上海扬子江万丽大酒店
+  var urlyzjwl = './gltf/2/yzjwl.gltf'
+  var positioneyzjwl = {
+    position: new AMap.LngLat(121.4061, 31.202916),
+    scale: 70,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlyzjwl, function (gltfCity) {
+    gltfCity.setOption(positioneyzjwl)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 上海龙之梦大酒店
+  var urlshlzm = './gltf/2/shlzm.gltf'
+  var positioneshlzm = {
+    position: new AMap.LngLat(121.430406, 31.210812),
+    scale: 64,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlshlzm, function (gltfCity) {
+    gltfCity.setOption(positioneshlzm)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+
+  // 上海万豪虹桥大酒店
+  var urlwhhq = './gltf/2/whhq.gltf'
+  var positionewhhq = {
+    position: new AMap.LngLat(121.376455, 31.191361),
+    scale: 120,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlwhhq, function (gltfCity) {
+    gltfCity.setOption(positionewhhq)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 虹桥公园
+  var urlhqgy = './gltf/2/hqgy.gltf'
+  var positionehqgy = {
+    position: new AMap.LngLat(121.405602, 31.206114),
+    scale: 81,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlhqgy, function (gltfCity) {
+    gltfCity.setOption(positionehqgy)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 上海国际展览中心
+  var urlgjzlzx = './gltf/2/gjzlzx.gltf'
+  var positionegjzlzx = {
+    position: new AMap.LngLat(121.403979, 31.203214),
+    scale: 81,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlgjzlzx, function (gltfCity) {
+    gltfCity.setOption(positionegjzlzx)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+
+
+  // 延安中学
+  var urlyazx = './gltf/2/yazx.gltf'
+  var positioneyazx = {
+    position: new AMap.LngLat(121.38047, 31.209344),
+    scale: 156,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlyazx, function (gltfCity) {
+    gltfCity.setOption(positioneyazx)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 延安中学体育馆
+  var urlyazxtyg = './gltf/2/yazxtyg.gltf'
+  var positioneyazxtyg = {
+    position: new AMap.LngLat(121.38047, 31.209344),
+    scale: 156,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlyazxtyg, function (gltfCity) {
+    gltfCity.setOption(positioneyazxtyg)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 新泾公园
+  var urlxjgy = './gltf/2/xjgy.gltf'
+  var positionexjgy = {
+    position: new AMap.LngLat(121.36213, 31.217141),
+    scale: 78,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlxjgy, function (gltfCity) {
+    gltfCity.setOption(positionexjgy)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 上海动物园
+  var urlshdwy = './gltf/2/shdwy.gltf'
+  var positioneshdwy = {
+    position: new AMap.LngLat(121.363453, 31.192614),
+    scale: 440,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlshdwy, function (gltfCity) {
+    gltfCity.setOption(positioneshdwy)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+
+  // 东华创意园
+  var urldhcyy = './gltf/2/dhcyy.gltf'
+  var positiondhcyy = {
+    position: new AMap.LngLat(121.417569, 31.203627),
+    scale: 38,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urldhcyy, function (gltfCity) {
+    gltfCity.setOption(positiondhcyy)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 德必易园
+  var urldbyy = './gltf/2/dhcyy.gltf'
+  var positiondbyy = {
+    position: new AMap.LngLat(121.420472, 31.215676),
+    scale: 80,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urldbyy, function (gltfCity) {
+    gltfCity.setOption(positiondbyy)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 创邑SPACE源
+  var urlcyspace = './gltf/2/cyspace.gltf'
+  var positioncyspace = {
+    position: new AMap.LngLat(121.416875, 31.211363),
+    scale: 57,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlcyspace, function (gltfCity) {
+    gltfCity.setOption(positioncyspace)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 创邑·河
+  var urlcyhe = './gltf/2/cyhe.gltf'
+  var positioncyhe = {
+    position: new AMap.LngLat(121.409928, 31.221962),
+    scale: 62,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlcyhe, function (gltfCity) {
+    gltfCity.setOption(positioncyhe)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 上海时尚园 问题
+  var urlshssx = './gltf/2/shssx.gltf'
+  var positionshssx = {
+    position: new AMap.LngLat(121.408869, 31.211006),
+    scale: 105,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlshssx, function (gltfCity) {
+    gltfCity.setOption(positionshssx)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+
+  // 上海天山广场凯悦嘉轩酒店 问题
+  var urlkyjd = './gltf/2/kyjd.gltf'
+  var positionkyjd = {
+    position: new AMap.LngLat(121.408326, 31.209465),
+    scale: 66,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlkyjd, function (gltfCity) {
+    gltfCity.setOption(positionkyjd)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+
+
+  // 弘基创邑国际园
+  var urlhjcygyy = './gltf/2/hjcygyy.gltf'
+  var positionhjcygyy = {
+    position: new AMap.LngLat(121.428362, 31.218161),
+    scale: 66,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlhjcygyy, function (gltfCity) {
+    gltfCity.setOption(positionhjcygyy)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 民俗文化中心
+  var urlmswh = './gltf/2/mswh.gltf'
+  var positionmswh = {
+    position: new AMap.LngLat(121.37221, 31.216587),
+    scale: 74,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlmswh, function (gltfCity) {
+    gltfCity.setOption(positionmswh)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+  // 幸福里
+  var urlxfl = './gltf/2/xfl.gltf'
+  var positionxfl = {
+    position: new AMap.LngLat(121.430403, 31.204359),
+    scale: 74,
+    height: 0,
+    scene: 0
+  }
+  gltfObj.load(urlxfl, function (gltfCity) {
+    gltfCity.setOption(positionxfl)
+    gltfCity.rotateX(90)
+    gltfCity.rotateY(0)
+    gltfCity.rotateZ(0)
+    object3Dlayer.add(gltfCity)
+  })
+
+
+
+
+
+
+
 })

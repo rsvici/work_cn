@@ -3,8 +3,8 @@
  * @version: 
  * @Author: rsvici
  * @Date: 2019-01-31 11:40:32
- * @LastEditors: rsvici
- * @LastEditTime: 2019-08-15 15:29:14
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2019-10-21 18:43:58
  */
 // 标识点
 if (getQueryString('endsouth')) {
@@ -301,7 +301,7 @@ if (getQueryString('endsouth')) {
   var lzmgwMarker = new AMap.Marker({
     map: map,
     icon: './imgs/icon.png',
-    position: [121.4171 , 31.219152],
+    position: [121.4171, 31.219152],
     height: 2100,
   })
   lzmgwMarker.setLabel({
@@ -314,7 +314,7 @@ if (getQueryString('endsouth')) {
   var shycMarker = new AMap.Marker({
     map: map,
     icon: './imgs/icon.png',
-    position: [121.429497 , 31.202700],
+    position: [121.429497, 31.202700],
     height: 400,
   })
   shycMarker.setLabel({
@@ -349,6 +349,343 @@ if (getQueryString('endsouth')) {
     offset: new AMap.Pixel(-40, 31),
     content: "<div class='info1'>长宁文化艺术中心</div>",
   })
+
+
+
+  // 天山公园
+  var tsgyMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.415586, 31.210077],
+    height: 600,
+  })
+  tsgyMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-20, 31),
+    content: "<div class='info1'>天山公园</div>",
+  })
+
+  // 育音堂 问题
+  var yytMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.416773, 31.209064],
+    height: 600,
+  })
+  yytMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-10, 31),
+    content: "<div class='info1'>育音堂</div>",
+  })
+
+  // 长宁区工人文化宫
+  var cnqgrMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.425838, 31.219466],
+    height: 600,
+  })
+  cnqgrMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-40, 31),
+    content: "<div class='info1'>长宁区工人文化宫</div>",
+  })
+
+  // 长宁区少年儿童图书馆
+  var ettsgMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.425838, 31.219466],
+    height: 600,
+  })
+  cnqgrMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-50, 31),
+    content: "<div class='info1'>长宁区少年儿童图书馆</div>",
+  })
+
+
+  // 星空广场
+  var xkgcMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.392423, 31.20068],
+    height: 600,
+  })
+  xkgcMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-20, 31),
+    content: "<div class='info1'>星空广场</div>",
+  })
+
+  // 虹桥郁锦香宾馆
+  var hqyjxMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.410744, 31.203886],
+    height: 600,
+  })
+  hqyjxMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-35, 31),
+    content: "<div class='info1'>虹桥郁锦香宾馆</div>",
+  })
+
+  // 虹桥锦江大酒店
+  var hqjjMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.405538, 31.203441],
+    height: 600,
+  })
+  hqjjMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-35, 31),
+    content: "<div class='info1'>虹桥锦江大酒店</div>",
+  })
+
+  // 上海扬子江万丽大酒店
+  var yzjwlMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.4061, 31.202916],
+    height: 600,
+  })
+  yzjwlMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-50, 31),
+    content: "<div class='info1'>上海扬子江万丽大酒店</div>",
+  })
+
+
+
+  // 上海龙之梦大酒店
+  var shlzmMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.430406, 31.210812],
+    height: 600,
+  })
+  shlzmMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-40, 31),
+    content: "<div class='info1'>上海龙之梦大酒店</div>",
+  })
+
+  // 上海万豪虹桥大酒店
+  var whhqMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.376455, 31.191361],
+    height: 600,
+  })
+  whhqMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-45, 31),
+    content: "<div class='info1'>上海万豪虹桥大酒店</div>",
+  })
+
+  // 虹桥公园
+  var hqgyMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.405602, 31.206114],
+    height: 600,
+  })
+  hqgyMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-20, 31),
+    content: "<div class='info1'>虹桥公园</div>",
+  })
+
+
+  // 上海国际展览中心
+  var gjzlzxMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.403979, 31.203214],
+    height: 600,
+  })
+  gjzlzxMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-40, 31),
+    content: "<div class='info1'>上海国际展览中心</div>",
+  })
+
+
+  // 上海延安中学
+  var yazxMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.38047, 31.209344],
+    height: 600,
+  })
+  yazxMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-30, 31),
+    content: "<div class='info1'>上海延安中学</div>",
+  })
+
+  // 上海延安中学体育馆
+  var yazxtygMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.38133, 31.210605],
+    height: 600,
+  })
+  yazxtygMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-35, 31),
+    content: "<div class='info1'>延安中学体育馆</div>",
+  })
+
+
+  // 新泾公园
+  var xjgyMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.36213, 31.217141],
+    height: 600,
+  })
+  xjgyMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-20, 31),
+    content: "<div class='info1'>新泾公园</div>",
+  })
+
+  // 上海动物园
+  var shdwyMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.363453, 31.192614],
+    height: 600,
+  })
+  shdwyMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-25, 31),
+    content: "<div class='info1'>上海动物园</div>",
+  })
+
+  // 东华创意园
+  var dhcyyMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.417569, 31.203627],
+    height: 600,
+  })
+  dhcyyMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-25, 31),
+    content: "<div class='info1'>东华创意园</div>",
+  })
+
+  // 德必易园
+  var dbyyMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.420472, 31.215676],
+    height: 600,
+  })
+  dbyyMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-20, 31),
+    content: "<div class='info1'>德必易园</div>",
+  })
+
+  // 创邑SPACE源
+  var cyspaceMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.416875, 31.211363],
+    height: 600,
+  })
+  cyspaceMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-35, 31),
+    content: "<div class='info1'>创邑SPACE源</div>",
+  })
+
+  // 创邑·河
+  var cyheMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.416875, 31.211363],
+    height: 600,
+  })
+  cyheMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-18, 31),
+    content: "<div class='info1'>创邑·河</div>",
+  })
+
+  // 上海时尚园
+  var shsxsMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.408869, 31.211006],
+    height: 600,
+  })
+  shsxsMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-25, 31),
+    content: "<div class='info1'>上海时尚园</div>",
+  })
+
+  // 上海天山广场凯悦嘉轩酒店
+  var kyjdMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.408326, 31.209465],
+    height: 600,
+  })
+  kyjdMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-40, 31),
+    content: "<div class='info1'>上海凯悦嘉轩酒店</div>",
+  })
+
+  // 弘基创邑国际园
+  var hjcygyyMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.428362, 31.218161],
+    height: 600,
+  })
+  hjcygyyMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-35, 31),
+    content: "<div class='info1'>弘基创邑国际园</div>",
+  })
+
+  // 民俗文化中心
+  var mswhMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.37221, 31.216587],
+    height: 600,
+  })
+  mswhMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-30, 31),
+    content: "<div class='info1'>民俗文化中心</div>",
+  })
+
+
+  // 幸福里
+  var xflMarker = new AMap.Marker({
+    map: map,
+    icon: './imgs/icon.png',
+    position: [121.430403, 31.204359],
+    height: 600,
+  })
+  xflMarker.setLabel({
+    //修改label相对于maker的位置
+    offset: new AMap.Pixel(-15, 31),
+    content: "<div class='info1'>幸福里</div>",
+  })
+
+
+
 
 
   // 自定义事件
@@ -472,6 +809,181 @@ if (getQueryString('endsouth')) {
   }
   ssxsMarker.on('click', showInfoMgssxsMarker)
 
+
+  // 上海银星皇冠假日酒店
+  yxhgMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+
+  // 中山公园
+  zsgyMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=20'
+  })
+
+  // 缤谷广场
+  bggcMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=21'
+  })
+
+  // 长宁图书馆
+  cntsgMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=22'
+  })
+  // 龙之梦购物中心
+  lzmgwMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=23'
+  })
+  // 龙之梦万丽酒店
+  lzmgwMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=24'
+  })
+  // 上海影城
+  shycMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=25'
+  })
+  // 宋庆龄纪念馆
+  sqlgjMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 长宁文化艺术中心
+  cnwhysMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 天山公园
+  tsgyMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 育音堂
+  yytMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 长宁区工人文化宫
+  cnqgrMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 长宁区少年儿童图书馆
+  ettsgMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 星空广场
+  xkgcMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 虹桥郁锦香宾馆
+  hqyjxMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 虹桥锦江大酒店
+  hqjjMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 上海扬子江万丽大酒店
+  yzjwlMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 上海龙之梦大酒店
+  shlzmMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 上海万豪虹桥大酒店
+  whhqMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 虹桥公园
+  hqgyMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 上海国际展览中心
+  gjzlzxMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 上海延安中学
+  yazxMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 上海延安中学体育馆
+  yazxtygMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 新泾公园
+  xjgyMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 上海动物园
+  shdwyMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 东华创意园
+  dhcyyMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 德必易园
+  dbyyMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+
+  // 创邑SPACE源
+  cyspaceMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 创邑·河
+  cyheMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 上海时尚园
+  shsxsMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 上海天山广场凯悦嘉轩酒店
+  kyjdMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 弘基创邑国际园
+  hjcygyyMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 民俗文化中心
+  mswhMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
+  // 幸福里
+  xflMarker.on('click', function () {
+    window.location.href =
+      '../#/shopinfo?shopItemId=19'
+  })
 
 
 

@@ -1,3 +1,9 @@
+/*
+ * @Descripttion: 
+ * @Version: 
+ * @Author: rsvici
+ * @Date: 2019-01-29 19:30:16
+ */
 angular.module('shopinfoModule', [])
     .controller('shopinfoCtrl', ['$scope', '$state', '$http', '$httpParamSerializer', 'adminUrl', '$interval', '$ionicPopup', '$timeout', '$stateParams', '$sce', function ($scope, $state, $http, $httpParamSerializer, adminUrl, $interval, $ionicPopup, $timeout, $stateParams, $sce) {
 
@@ -50,4 +56,5 @@ angular.module('shopinfoModule', [])
         }
 
 
+       
     }]);
