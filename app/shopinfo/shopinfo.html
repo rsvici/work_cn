@@ -17,16 +17,21 @@
         </div>
         <div class="s_img" ng-if="item.type=='img'">
             <img ng-src="{{item.content}}" alt="" width="96%">
-        </div>
+        </div>eeeeeee
     </div> -->
     <div class="shopInfoItem" ng-bind-html="shopInfo.content">
 
     </div>
 
-    <div class="active" ng-click="goActivelist()" >
+    <div class="active" ng-click="goActivelist()">
         <img src="./image/active.png" alt="" width="100%">
     </div>
-    <div class="shopinfoposition"  ng-click="goMap()">
+
+    <div class="shopinfoposition goback" ng-click="goBack()">
+        <img src="./image/goback.png" alt="" width="100%">
+    </div>
+
+    <div class="shopinfoposition" ng-click="goMap()">
         <img src="./image/position.png" alt="" width="100%">
     </div>
 </div>

@@ -4,7 +4,7 @@
  * @Author: rsvici
  * @Date: 2019-01-31 11:40:32
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2019-10-21 18:43:58
+ * @LastEditTime: 2019-10-24 17:58:59
  */
 // 标识点
 if (getQueryString('endsouth')) {
@@ -395,10 +395,10 @@ if (getQueryString('endsouth')) {
   var ettsgMarker = new AMap.Marker({
     map: map,
     icon: './imgs/icon.png',
-    position: [121.425838, 31.219466],
+    position: [121.426645, 31.219051],
     height: 600,
   })
-  cnqgrMarker.setLabel({
+  ettsgMarker.setLabel({
     //修改label相对于maker的位置
     offset: new AMap.Pixel(-50, 31),
     content: "<div class='info1'>长宁区少年儿童图书馆</div>",
@@ -609,7 +609,7 @@ if (getQueryString('endsouth')) {
   var cyheMarker = new AMap.Marker({
     map: map,
     icon: './imgs/icon.png',
-    position: [121.416875, 31.211363],
+    position: [121.409928, 31.221962],
     height: 600,
   })
   cyheMarker.setLabel({
@@ -851,138 +851,138 @@ if (getQueryString('endsouth')) {
   // 宋庆龄纪念馆
   sqlgjMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=26'
   })
   // 长宁文化艺术中心
   cnwhysMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=28'
   })
   // 天山公园
   tsgyMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=29'
   })
   // 育音堂
   yytMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=30'
   })
   // 长宁区工人文化宫
   cnqgrMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=31'
   })
   // 长宁区少年儿童图书馆
   ettsgMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=32'
   })
   // 星空广场
   xkgcMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=33'
   })
   // 虹桥郁锦香宾馆
   hqyjxMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=34'
   })
   // 虹桥锦江大酒店
   hqjjMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=35'
   })
   // 上海扬子江万丽大酒店
   yzjwlMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=36'
   })
   // 上海龙之梦大酒店
   shlzmMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=37'
   })
   // 上海万豪虹桥大酒店
   whhqMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=38'
   })
   // 虹桥公园
   hqgyMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=39'
   })
   // 上海国际展览中心
   gjzlzxMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=40'
   })
   // 上海延安中学
   yazxMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=41'
   })
   // 上海延安中学体育馆
   yazxtygMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=42'
   })
   // 新泾公园
   xjgyMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=43'
   })
   // 上海动物园
   shdwyMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=44'
   })
   // 东华创意园
   dhcyyMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=45'
   })
   // 德必易园
   dbyyMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=46'
   })
 
   // 创邑SPACE源
   cyspaceMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=47'
   })
   // 创邑·河
   cyheMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=48'
   })
   // 上海时尚园
   shsxsMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=49'
   })
   // 上海天山广场凯悦嘉轩酒店
   kyjdMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=59'
   })
   // 弘基创邑国际园
   hjcygyyMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=51'
   })
   // 民俗文化中心
   mswhMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=52'
   })
   // 幸福里
   xflMarker.on('click', function () {
     window.location.href =
-      '../#/shopinfo?shopItemId=19'
+      '../#/shopinfo?shopItemId=53'
   })
 
 

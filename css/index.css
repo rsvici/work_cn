@@ -369,6 +369,14 @@ input {
     width: 40px;
 }
 
+.shopinfo .shopinfoposition.goback{
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 60%;
+    width: 40px;
+}
+
 /* 活动列表 */
 
 .activelist {
@@ -733,6 +741,7 @@ input {
     background-color: #f1f1f1;
     min-height: 100vh;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .nine .juzhen {

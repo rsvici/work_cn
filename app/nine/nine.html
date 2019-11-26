@@ -1,8 +1,14 @@
-﻿<div class="shoplist nine">
+﻿<!--
+ * @Descripttion: 
+ * @Version: 
+ * @Author: rsvici
+ * @Date: 2019-01-29 19:30:16
+ -->
+<div class="shoplist nine">
     <ul class="juzhen" style="padding-top: 1vw;">
         <li ng-repeat="item  in matrixObj">
-            <a href="{{item.url}}" style="text-decoration:none;   color:#333; ">
-                <img ng-src="{{item.imgUrl}}" alt="" width="80%">
+            <a href="{{item.officialCcountsUrl}}" style="text-decoration:none;   color:#333; ">
+                <img ng-src="{{item.imageUrl}}" alt="" width="80%">
                 <div>
                     {{item.name}}
                 </div>

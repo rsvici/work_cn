@@ -55,6 +55,8 @@ angular.module('shopinfoModule', [])
             window.location.href = `./map/index.html?endsouth=${endsouth}&endwest=${endwest}`
         }
 
-
+        $scope.goBack=function(){
+            window.history.back()
+        }
        
     }]);
